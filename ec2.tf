@@ -1,4 +1,9 @@
-resource "aws_instance" "myec2" {
-    ami = "ami-00c39f71452c08778"
-    instance_type = "t2.micro"
+resource "random_pet" "example" {
+    length = var.pet_length
+    prefix = var.pet_prefix
+}
+
+resource "random_pet" "example_2" {
+    length = var.pet_length
+    prefix = var.pet_prefix
 }
